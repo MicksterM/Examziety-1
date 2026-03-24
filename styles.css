@@ -625,6 +625,38 @@ section {
     z-index: 20;
 }
 
+.instructors-group-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.group-photo {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .group-photo {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .group-photo {
+        max-height: 220px;
+        border-radius: 8px;
+    }
+}
+
 .instructor-card h3 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-xs);
