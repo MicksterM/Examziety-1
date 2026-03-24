@@ -1,0 +1,148 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&display=swap');
+      .stress-line { stroke: #c9a961; stroke-width: 1.5; opacity: 0.6; }
+      .text-formal { font-family: Georgia, serif; font-size: 8px; fill: #4a4744; }
+    </style>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b5a0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3a35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2622;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf9f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0ede8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle decorative element - stress indicator -->
+  <circle cx="320" cy="80" r="40" fill="none" stroke="#c9a961" stroke-width="1" opacity="0.3"/>
+  <circle cx="320" cy="80" r="35" fill="none" stroke="#c9a961" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Desk surface -->
+  <rect x="60" y="280" width="280" height="140" fill="url(#deskGrad)" rx="4" filter="url(#shadow)"/>
+  
+  <!-- Desk front edge highlight -->
+  <rect x="60" y="280" width="280" height="8" fill="#4a4744" rx="4" opacity="0.4"/>
+
+  <!-- Exam paper on desk -->
+  <g>
+    <!-- Paper stack -->
+    <rect x="80" y="220" width="140" height="120" fill="#ffffff" rx="2" filter="url(#shadow)"/>
+    <rect x="82" y="218" width="140" height="120" fill="#ebe7e2" opacity="0.5" rx="2"/>
+    
+    <!-- Paper lines (text representation) -->
+    <line x1="90" y1="240" x2="210" y2="240" stroke="#4a4744" stroke-width="1" opacity="0.3"/>
+    <line x1="90" y1="255" x2="210" y2="255" stroke="#4a4744" stroke-width="0.8" opacity="0.25"/>
+    <line x1="90" y1="268" x2="200" y2="268" stroke="#4a4744" stroke-width="0.8" opacity="0.25"/>
+    <line x1="90" y1="281" x2="210" y2="281" stroke="#4a4744" stroke-width="0.8" opacity="0.25"/>
+    <line x1="90" y1="294" x2="190" y2="294" stroke="#4a4744" stroke-width="0.8" opacity="0.25"/>
+    <line x1="90" y1="307" x2="210" y2="307" stroke="#4a4744" stroke-width="0.8" opacity="0.25"/>
+    
+    <!-- Exam header -->
+    <text x="95" y="235" class="text-formal" font-weight="bold">BAR EXAM</text>
+  </g>
+
+  <!-- Student body - seated position -->
+  <!-- Chair -->
+  <ellipse cx="150" cy="280" rx="35" ry="25" fill="#5a5550" opacity="0.7"/>
+  <rect x="140" y="305" width="20" height="60" fill="#5a5550" rx="3"/>
+  <rect x="190" y="305" width="20" height="60" fill="#5a5550" rx="3"/>
+
+  <!-- Torso -->
+  <ellipse cx="150" cy="200" rx="40" ry="50" fill="#0d0d0d"/>
+  
+  <!-- Button-up shirt detail -->
+  <line x1="150" y1="160" x2="150" y2="240" stroke="#ebe7e2" stroke-width="1" opacity="0.2"/>
+  <circle cx="150" cy="175" r="2" fill="#ebe7e2" opacity="0.3"/>
+  <circle cx="150" cy="190" r="2" fill="#ebe7e2" opacity="0.3"/>
+  <circle cx="150" cy="205" r="2" fill="#ebe7e2" opacity="0.3"/>
+
+  <!-- Left arm - relaxed down -->
+  <path d="M 120 210 Q 110 240 105 280" stroke="#d4b5a0" stroke-width="16" fill="none" stroke-linecap="round" filter="url(#shadow)"/>
+  
+  <!-- Left hand on desk -->
+  <ellipse cx="100" cy="290" rx="12" ry="14" fill="url(#skinTone)" filter="url(#shadow)"/>
+  <circle cx="95" cy="285" r="3" fill="#d4b5a0" opacity="0.5"/>
+
+  <!-- Right arm - raised to head (stress gesture) -->
+  <path d="M 180 210 Q 210 150 220 120" stroke="#d4b5a0" stroke-width="16" fill="none" stroke-linecap="round" filter="url(#shadow)"/>
+  
+  <!-- Right hand on head -->
+  <ellipse cx="225" cy="115" rx="14" ry="12" fill="url(#skinTone)" filter="url(#shadow)"/>
+  <circle cx="220" cy="110" r="3" fill="#d4b5a0" opacity="0.5"/>
+
+  <!-- Neck -->
+  <rect x="145" y="155" width="10" height="15" fill="url(#skinTone)" rx="2"/>
+
+  <!-- Head -->
+  <circle cx="150" cy="130" r="28" fill="url(#skinTone)" filter="url(#shadow)"/>
+
+  <!-- Hair -->
+  <path d="M 125 115 Q 125 85 150 78 Q 175 85 175 115" fill="#3d3a35" filter="url(#shadow)"/>
+
+  <!-- Face - stressed expression -->
+  <!-- Left eye -->
+  <circle cx="138" cy="125" r="4" fill="#ffffff"/>
+  <circle cx="138" cy="125" r="2.5" fill="#4a4744"/>
+  <circle cx="139" cy="123" r="1" fill="#ffffff" opacity="0.6"/>
+  <!-- Eye wrinkle (stress) -->
+  <path d="M 132 122 Q 130 125 132 128" stroke="#c9a961" stroke-width="1.5" fill="none" opacity="0.5" class="stress-line"/>
+
+  <!-- Right eye -->
+  <circle cx="162" cy="125" r="4" fill="#ffffff"/>
+  <circle cx="162" cy="125" r="2.5" fill="#4a4744"/>
+  <circle cx="163" cy="123" r="1" fill="#ffffff" opacity="0.6"/>
+  <!-- Eye wrinkle (stress) -->
+  <path d="M 168 122 Q 170 125 168 128" stroke="#c9a961" stroke-width="1.5" fill="none" opacity="0.5" class="stress-line"/>
+
+  <!-- Eyebrows - furrowed/worried -->
+  <path d="M 133 112 Q 138 108 143 112" stroke="#3d3a35" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 157 112 Q 162 108 167 112" stroke="#3d3a35" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <line x1="150" y1="128" x2="150" y2="142" stroke="#c9a961" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Mouth - lips pressed/tense -->
+  <path d="M 140 150 Q 150 155 160 150" stroke="#a0826d" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Stress indicators - subtle lines around anxiety area -->
+  <path d="M 155 105 Q 158 100 160 95" stroke="#c9a961" stroke-width="1" opacity="0.4" class="stress-line"/>
+  <path d="M 145 105 Q 142 100 140 95" stroke="#c9a961" stroke-width="1" opacity="0.4" class="stress-line"/>
+
+  <!-- Vertical stress line on forehead -->
+  <line x1="150" y1="105" x2="150" y2="115" stroke="#c9a961" stroke-width="1.5" opacity="0.5" class="stress-line"/>
+
+  <!-- Clock showing time pressure (top right) -->
+  <g opacity="0.6">
+    <circle cx="320" cy="120" r="20" fill="none" stroke="#c9a961" stroke-width="1.5"/>
+    <circle cx="320" cy="120" r="3" fill="#c9a961"/>
+    <!-- Hour hand pointing to 2 -->
+    <line x1="320" y1="120" x2="326" y2="110" stroke="#c9a961" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Minute hand pointing to 12 -->
+    <line x1="320" y1="120" x2="320" y2="103" stroke="#c9a961" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle animation suggestion - thought bubbles/anxiety swirls -->
+  <g opacity="0.3">
+    <circle cx="90" cy="80" r="6" fill="none" stroke="#c9a961" stroke-width="1"/>
+    <circle cx="75" cy="65" r="4" fill="none" stroke="#c9a961" stroke-width="1"/>
+    <circle cx="100" cy="50" r="5" fill="none" stroke="#c9a961" stroke-width="1"/>
+  </g>
+
+  <!-- Signature accent - professional touch -->
+  <line x1="30" y1="470" x2="100" y2="470" stroke="#c9a961" stroke-width="1" opacity="0.4"/>
+  <text x="30" y="485" font-family="Georgia, serif" font-size="10" fill="#8b8680" opacity="0.6">The moment before the exam changes everything</text>
+</svg>
