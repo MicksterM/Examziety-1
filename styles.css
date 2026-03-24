@@ -1386,14 +1386,26 @@ section {
 
     .hero-headline {
         font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .hero-subheadline {
         font-size: 1.25rem;
     }
 
+    .hero-descriptor {
+        font-size: 1rem;
+    }
+
     .hero-visual {
         height: 250px;
+    }
+
+    /* CTA Buttons - Touch friendly */
+    .cta-button {
+        min-height: 48px;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 1rem;
     }
 
     /* Investment */
@@ -1423,8 +1435,18 @@ section {
         order: 2;
     }
 
+    .signup-image {
+        order: 1;
+        margin-bottom: var(--spacing-lg);
+    }
+
     .signup-form {
         order: 1;
+    }
+
+    .form-group input {
+        padding: var(--spacing-md);
+        font-size: 16px;
     }
 
     /* Problem / Benefits Grid */
@@ -1434,23 +1456,76 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .problem-card,
+    .benefit-card,
+    .instructor-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* Science Grid */
+    .science-grid {
+        grid-template-columns: 1fr;
+    }
+
     /* FAQ Grid */
     .faq-grid {
         grid-template-columns: 1fr;
+    }
+
+    .faq-item {
+        padding: var(--spacing-lg);
+    }
+
+    /* Course Details */
+    .course-details {
+        gap: var(--spacing-lg);
+    }
+
+    .detail-row {
+        padding: var(--spacing-lg);
+    }
+
+    .detail-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Pricing */
+    .pricing-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* Final CTA */
+    .final-message {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .final-message h2 {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .final-message p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
         font-size: 1.75rem;
+        line-height: 1.15;
     }
 
     h2 {
         font-size: 1.5rem;
+        line-height: 1.2;
     }
 
     h3 {
         font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
     }
 
     .container {
@@ -1461,9 +1536,18 @@ section {
         padding: var(--spacing-xl) 0;
     }
 
-    .cta-button {
-        padding: var(--spacing-sm) var(--spacing-md);
+    p {
         font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* CTA Buttons - Extra touch-friendly */
+    .cta-button {
+        min-height: 48px;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 1rem;
+        width: 100%;
+        margin: var(--spacing-md) auto !important;
     }
 
     .cta-large {
@@ -1473,10 +1557,43 @@ section {
 
     .hero-headline {
         font-size: 1.75rem;
+        line-height: 1.15;
     }
 
     .hero-subheadline {
         font-size: 1.1rem;
+    }
+
+    .hero-descriptor {
+        font-size: 0.95rem;
+    }
+
+    .hero-trust {
+        font-size: 0.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    /* Form inputs - Larger on mobile for easier tapping */
+    .form-group input {
+        padding: var(--spacing-md);
+        font-size: 16px; /* Prevents auto-zoom on iOS */
+        min-height: 44px;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    /* Card padding */
+    .problem-card,
+    .benefit-card,
+    .instructor-card,
+    .science-card,
+    .faq-item {
+        padding: var(--spacing-md);
     }
 
     .pricing-amount .number {
@@ -1485,10 +1602,122 @@ section {
 
     .pricing-value {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .value-item {
+        padding: var(--spacing-md);
     }
 
     .modal-content {
         margin: 20% auto;
         padding: var(--spacing-lg);
+    }
+
+    /* Sticky header visibility */
+    .hero-trust {
+        display: block;
+        margin-top: var(--spacing-md);
+    }
+
+    /* Transformation banner height */
+    .transformation-banner {
+        height: 280px;
+    }
+
+    .transformation-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .transformation-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Detail rows */
+    .detail-row {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .detail-icon {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .detail-content h4 {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    /* FAQ clarity */
+    .faq-item h4 {
+        margin-bottom: var(--spacing-sm);
+        font-size: 0.95rem;
+    }
+
+    .faq-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Final message */
+    .final-message {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .final-message h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .final-emphasis {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.85rem;
+    }
+
+    /* Disclaimer */
+    .disclaimer-content {
+        padding: var(--spacing-lg);
+    }
+
+    .disclaimer-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .disclaimer-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-button {
+        font-size: 0.95rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero-headline {
+        font-size: 1.5rem;
+    }
+
+    .pricing-amount .number {
+        font-size: 2rem;
     }
 }
