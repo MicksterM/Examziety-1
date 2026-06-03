@@ -1,6 +1,6 @@
 # Examziety Landing Page
 
-A premium, high-converting landing page for Examziety—a 10-week live Zoom course designed to help bar exam candidates manage and overcome anxiety.
+A premium, high-converting landing page for Examziety—a 6-week live Zoom course designed to help bar exam candidates manage and overcome anxiety.
 
 ## Overview
 
@@ -86,9 +86,9 @@ All copy is semantic and easy to find. Key sections:
 
 Find these easily searchable sections:
 
-- **Course Schedule**: Lines with "May 6" and "June 11" in `how-it-works` section
+- **Course Schedule**: Lines with "June 16" and "July 21" in `how-it-works` section
 - **Price**: "$279" appears in pricing section
-- **Duration**: "10-week" throughout
+- **Duration**: "6-week" throughout
 - **Format**: "Live Zoom course"
 
 To change dates or price:

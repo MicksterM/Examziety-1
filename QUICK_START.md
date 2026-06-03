@@ -51,7 +51,7 @@ Replace with: Your headline
 Common sections to customize:
 - `<h1 class="hero-headline">` - Main headline
 - All instructor names/bios
-- Course dates (search for "May 6" and "June 11")
+- Course dates (search for "June 16" and "July 21")
 - Price (search for "$279" or "279")
 - Contact email
 
@@ -193,9 +193,9 @@ Use Find & Replace (Ctrl/Cmd + H):
 
 ### Change course dates
 
-1. Find: `May 6 – June 11`
+1. Find: `June 16 – July 21`
 2. Replace: `Your dates`
-3. Also update: `Thursdays, May 6 – June 11` in course-schedule
+3. Also update: `Tuesdays, June 16 – July 21` in course-schedule
 
 ### Change price
 

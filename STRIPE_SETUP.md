@@ -98,7 +98,7 @@ app.post('/api/checkout-session', async (req, res) => {
                         currency: 'usd',
                         product_data: {
                             name: 'Examziety Course',
-                            description: '10-week live Zoom course for bar exam anxiety management',
+                            description: '6-week live Zoom course for bar exam anxiety management',
                             images: ['https://your-domain.com/examziety-preview.jpg'], // Optional
                         },
                         unit_amount: 27900, // $279 in cents
