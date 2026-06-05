@@ -1,5 +1,6 @@
 // ========== FORM HANDLING ========== 
 
+const vcitaUrl = 'https://live.vcita.com/site/fwlen2v9iinqt7dd/online-scheduling?event=bl1ysdg72gkg3z1d';
 const signupForm = document.getElementById('signupForm');
 const paymentModal = document.getElementById('paymentModal');
 const closeModal = document.querySelector('.close');
@@ -8,6 +9,8 @@ const stripeButton = document.getElementById('stripeButton');
 // Handle form submission
 signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    window.location.href = vcitaUrl;
+    return;
 
     // Collect form data
     const formData = {
@@ -55,22 +58,7 @@ window.addEventListener('click', (e) => {
 
 // Stripe button handler
 stripeButton.addEventListener('click', () => {
-    // Get stored signup data
-    const signupData = JSON.parse(localStorage.getItem('examzietySignup'));
-    
-    // Redirect to Stripe
-    // IMPLEMENTATION READY: Replace with your actual Stripe integration
-    // Option 1: Redirect to Stripe Checkout
-    window.location.href = `https://checkout.stripe.com/pay/cs_test_example#fidlock=${encodeURIComponent(JSON.stringify(signupData))}`;
-    
-    // Option 2: Use Stripe.js to create checkout
-    // stripe.redirectToCheckout({
-    //     sessionId: 'cs_test_example'
-    // });
-    
-    // Option 3: Open Stripe payment page in modal
-    // For development, show a placeholder
-    alert('Redirecting to Stripe payment page...\n\nName: ' + signupData.name + '\nEmail: ' + signupData.email);
+    window.location.href = vcitaUrl;
 });
 
 // ========== SMOOTH SCROLLING ========== 
