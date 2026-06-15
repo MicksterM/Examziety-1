@@ -246,6 +246,70 @@ section {
     }
 }
 
+/* ========== PROGRAM OVERVIEW SECTION ========== */
+
+.program-overview {
+    background: #fcfbf8;
+    border-top: 1px solid #efe8dc;
+}
+
+.program-overview-content {
+    max-width: 860px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.program-overview-content h2 {
+    margin-bottom: 1rem;
+}
+
+.program-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.program-overview-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #eee6db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.program-overview-card h3 {
+    margin-bottom: 0.9rem;
+}
+
+.program-overview-card ul {
+    padding-left: 1.2rem;
+    color: var(--color-grey-dark);
+}
+
+.program-overview-card li {
+    margin-bottom: 0.5rem;
+}
+
+.program-overview-cta {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f6eee0 0%, #fdf8ef 100%);
+    border-radius: 10px;
+    border: 1px solid #f0e2c8;
+}
+
+.program-overview-cta p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.program-overview-cta .cta-button {
+    margin-top: 0.25rem;
+}
+
 /* ========== PROBLEM SECTION ========== */
 
 .problem {
