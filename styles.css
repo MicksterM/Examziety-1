@@ -54,6 +54,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.3px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,6 +89,10 @@ p {
     margin-bottom: var(--spacing-md);
     font-size: 1rem;
     line-height: 1.7;
+}
+
+h1, h2, h3, h4, p, li {
+    overflow-wrap: anywhere;
 }
 
 a {
@@ -1501,6 +1506,27 @@ section {
 
 /* ========== RESPONSIVE DESIGN ========== */
 
+@media (max-width: 1024px) {
+    .hero .container,
+    .signup .container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .hero-content {
+        padding: 3rem 0;
+        max-width: 700px;
+    }
+
+    .science-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .transformation-banner {
+        height: 450px;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -1525,6 +1551,7 @@ section {
     /* Hero */
     .hero .container {
         grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
     }
 
     .hero-headline {
@@ -1593,9 +1620,12 @@ section {
     }
 
     /* Problem / Benefits Grid */
+    .program-overview-grid,
+    .weekly-grid,
     .problem-grid,
     .benefits-grid,
-    .instructors-grid {
+    .instructors-grid,
+    .pricing-value {
         grid-template-columns: 1fr;
     }
 
@@ -1608,6 +1638,15 @@ section {
     /* Science Grid */
     .science-grid {
         grid-template-columns: 1fr;
+    }
+
+    .program-overview-card,
+    .weekly-breakdown,
+    .course-details,
+    .course-schedule,
+    .signup-form,
+    .disclaimer-content {
+        padding: var(--spacing-lg);
     }
 
     /* FAQ Grid */
@@ -1625,7 +1664,9 @@ section {
     }
 
     .detail-row {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+        grid-template-columns: 1fr;
     }
 
     .detail-icon {
@@ -1640,6 +1681,10 @@ section {
     /* Final CTA */
     .final-message {
         padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .hero-content {
+        padding: 2rem 0 3rem;
     }
 
     .final-message h2 {
